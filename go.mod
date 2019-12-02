@@ -9,5 +9,7 @@ require (
 	github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910 // indirect
 	github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
 	github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a // indirect
-	golang.org/x/sync v0.0.0-20181108010431-42b317875d0f // indirect
+	go.uber.org/atomic v1.5.1
 )
+
+go 1.13

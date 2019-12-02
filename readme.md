@@ -83,7 +83,7 @@ docker-compose logs -f mcs-balance-exporter
 Set variables you need:
 
 ```sh
-MCS_EXPORTER_VERSION=v0.1.3-beta.3
+MCS_EXPORTER_VERSION=v0.1.0
 MCS_EXPORTER_PLATFORM=linux
 MCS_EXPORTER_ARCH=amd64
 MCS_LOGIN=<your_login>
@@ -168,7 +168,7 @@ Import dashboard from https://grafana.com/dashboards/9752 or use [examples/grafa
     labels:
       severity: critical
     annotations:
-      summary: "sms balance is {{ .Value }} RUB"
+      summary: "mcs balance is {{ .Value }} RUB"
       description: "Top up the balance: https://mcs.mail.ru/app/services/billing/"
 ```
 

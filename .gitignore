@@ -1,4 +1,6 @@
 .env
 .idea/
 /dist
-/smsc_balance_exporter
+/mcs_balance_exporter
+api_test.go
+

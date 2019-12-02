@@ -2,10 +2,10 @@
   rules:
 
   - alert: sms_balance
-    expr: sum(balance_smsc) <= 2000
+    expr: sum(balance_mcs{project="project-title"}) <= 2000
     for: 1s
     labels:
       severity: critical
     annotations:
-      summary: "sms balance is {{ .Value }} RUB"
-      description: "Top up the balance: https://smsc.ru/payment/"
+      summary: "MCS balance is {{ .Value }} RUB"
+      description: "Top up the balance: https://mcs.mail.ru/app/services/billing/"

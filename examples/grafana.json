@@ -106,14 +106,14 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "balance_smsc",
+          "expr": "balance_mcs",
           "format": "time_series",
           "intervalFactor": 1,
           "legendFormat": "{{service}}",
           "refId": "A"
         },
         {
-          "expr": "delta(balance_smsc[$period]) * -1",
+          "expr": "delta(balance_mcs[$period]) * -1",
           "format": "time_series",
           "interval": "$period",
           "intervalFactor": 1,
@@ -125,7 +125,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "SMS balance (https://smsc.ru)",
+      "title": "MCS balance (https://mcs.mail.ru)",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -255,7 +255,7 @@
     ]
   },
   "timezone": "",
-  "title": "SMS Balance",
+  "title": "MCS Balance",
   "uid": "pGpGU_lik",
   "version": 1
 }

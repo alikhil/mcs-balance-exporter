@@ -139,8 +139,7 @@ journalctl -fu mcs_balance_exporter
 
 ### Example grafana config
 
-Import dashboard from https://grafana.com/dashboards/9752 or use [examples/grafana.json](examples/grafana.json)
-![Grafana Panel](examples/grafana_panel.png)
+Use [examples/grafana.json](examples/grafana.json) as example.
 
 ### Example prometheus config
 

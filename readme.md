@@ -163,7 +163,7 @@ Import dashboard from https://grafana.com/dashboards/9752 or use [examples/grafa
   rules:
 
   - alert: sms_balance
-    expr: sum(balance_mcs) <= 2000
+    expr: sum(balance_mcs{project="project-title"}) <= 2000
     for: 1s
     labels:
       severity: critical

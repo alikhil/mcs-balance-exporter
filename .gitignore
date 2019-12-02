@@ -3,4 +3,5 @@
 /dist
 /mcs_balance_exporter
 api_test.go
+secrets.sh
 

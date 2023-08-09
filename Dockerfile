@@ -22,7 +22,7 @@ RUN CGO_ENABLED=0 GOOS=`go env GOHOSTOS` GOARCH=`go env GOHOSTARCH` go build -o 
     "
 
 # Copy compiled binary to clear Alpine Linux image
-FROM alpine:latest
+FROM alpine:3.18.3
 
 ARG VERSION=latest
 
